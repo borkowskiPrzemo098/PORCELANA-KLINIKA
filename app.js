@@ -54,7 +54,7 @@
       time: '3–4 tygodnie', visits: '4 wizyty', price: 'od 2 400 zł za ząb' },
     { k: 'wybielanie', n: 'Wybielanie', from: '1 200 zł', img: 'photo-1607613009820-a29f7bb81c04',
       d: 'Wybielanie gabinetowe z lampą i ochroną dziąseł, uzupełnione nakładkami do domu. Zęby jaśniejsze nawet o kilka odcieni po jednej wizycie.',
-      time: '1 dzień + 2 tygodnie w domu', visits: '1 wizyta', price: '1 200 zł' },
+      time: '1 dzień + 2 tyg. w domu', visits: '1 wizyta', price: '1 200 zł' },
     { k: 'implanty', n: 'Implanty', from: 'od 5 900 zł', img: 'photo-1588776814546-1ffcf47267a5',
       d: 'Tytanowy implant zastępuje korzeń zęba, a korona z cyrkonu — widoczną część. Planujemy na tomografii 3D, często z tymczasową koroną już w dniu zabiegu.',
       time: '3–4 miesiące', visits: '3–4 wizyty', price: 'od 5 900 zł z koroną' },
