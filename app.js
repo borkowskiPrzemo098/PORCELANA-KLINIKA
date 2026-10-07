@@ -100,7 +100,7 @@
   // Panel przyjmuje wysokość najdłuższego zabiegu — przełączanie nie przesuwa strony i nic nie jest ucinane
   const panel = $('#zabPanel');
   function sizePanel() {
-    const cur = $('.zab__item').findIndex(b => b.classList.contains('is-on'));
+    const cur = $$('.zab__item').findIndex(b => b.classList.contains('is-on'));
     panel.style.minHeight = '';
     let max = 0;
     ZAB.forEach((z, i) => {
