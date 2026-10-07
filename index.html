@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PORCELANA — klinika stomatologii estetycznej, Sopot</title>
+<meta name="description" content="PORCELANA — klinika stomatologii estetycznej w Sopocie. Licówki porcelanowe, wybielanie, implanty i ortodoncja nakładkowa. Konsultacja z projektem uśmiechu — umów online.">
+<meta property="og:title" content="PORCELANA — klinika stomatologii estetycznej, Sopot">
+<meta property="og:description" content="Uśmiech, który wygląda naturalnie. Umów konsultację online.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=1200&q=80">
+<meta name="theme-color" content="#faf8f4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23faf8f4'/%3E%3Cpath d='M7 13c4 8 14 8 18 0' stroke='%23a8864b' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<!--
+THESIS: Porcelana jako materiał — biel z ciepłym połyskiem, cienka złota krzywa uśmiechu; klinika wygląda jak atelier, nie jak przychodnia z niebieskimi kafelkami.
+OWN-WORLD: ciepła biel #faf8f4, biel #fff, kamień #efe9df, szampańskie złoto #a8864b (pola i linie), grafit #1f1d1a. Albert Sans 400–500, zdania (bez wersalików), duża skala. Znak: złota krzywa uśmiechu. Krawędzie lekko zaokrąglone (porcelana), pełne pola zamiast kart.
+STORY: pacjent widzi efekt (uśmiech), rozumie zabiegi i ceny, ufa lekarzom i procesowi, umawia konsultację.
+FIRST VIEWPORT: portret uśmiechniętej pacjentki po prawej, płynnie przechodzący w biel; po lewej nagłówek, lead, złoty przycisk "Umów konsultację"; pasek adres/status/telefon na dole.
+FORM: przepis AMBRA (zatwierdzony przez użytkownika) w jasnej odmianie; sygnatura: wybór zabiegu z panelem szczegółów i ceną.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<a class="skip" href="#zabiegi">Przejdź do zabiegów</a>
+
+<header class="header" id="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#top" aria-label="PORCELANA — strona główna">
+      <svg class="smile" viewBox="0 0 32 16" aria-hidden="true"><path d="M2 3c7 13 21 13 28 0"/></svg>
+      <span>PORCELANA</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Główna nawigacja">
+      <a href="#zabiegi">Zabiegi</a>
+      <a href="#proces">Jak pracujemy</a>
+      <a href="#zespol">Zespół</a>
+      <a href="#cennik">Cennik</a>
+      <a href="#faq">Pytania</a>
+      <a class="btn btn--gold nav__cta" href="#wizyta">Umów konsultację</a>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-h">
+  <div class="hero__bg"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=1600&q=85" alt="Uśmiechnięta pacjentka po zabiegu licówek" fetchpriority="high"></div>
+  <div class="wrap hero__in">
+    <h1 id="hero-h">Uśmiech, który wygląda naturalnie</h1>
+    <p class="hero__lead">Licówki porcelanowe, wybielanie i implanty projektowane cyfrowo — zanim cokolwiek zrobimy, zobaczysz swój nowy uśmiech na ekranie i&nbsp;w&nbsp;ustach.</p>
+    <div class="hero__cta">
+      <a class="btn btn--gold btn--lg" href="#wizyta">Umów konsultację</a>
+      <a class="btn btn--line btn--lg" href="#cennik">Zobacz cennik</a>
+    </div>
+    <p class="hero__note">Konsultacja z&nbsp;projektem uśmiechu 250 zł — w&nbsp;całości odliczana od kosztu leczenia.</p>
+  </div>
+  <div class="hero__bar">
+    <div class="wrap hero__bar-in">
+      <span>Bohaterów Monte Cassino 41, Sopot</span>
+      <span class="status" id="status" aria-live="polite"><span class="status__dot"></span><span id="statusText">Pn–pt 8:00–20:00</span></span>
+      <a href="tel:+48585550190">+48 58 555 01 90</a>
+    </div>
+  </div>
+</section>
+
+<section class="zabiegi" id="zabiegi" aria-labelledby="zab-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="zab-h" class="h2">Zabiegi</h2>
+      <p>Wybierz zabieg, żeby zobaczyć, ile trwa, ile wizyt wymaga i&nbsp;od jakiej ceny zaczynamy.</p>
+    </div>
+    <div class="zab">
+      <div class="zab__list" role="tablist" aria-label="Zabiegi" id="zabList"></div>
+      <article class="zab__panel" id="zabPanel" role="tabpanel" aria-live="polite">
+        <figure class="zab__img"><img id="zabImg" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1000&q=80" alt="" loading="lazy"></figure>
+        <div class="zab__body">
+          <h3 id="zabTitle">Licówki porcelanowe</h3>
+          <p id="zabDesc"></p>
+          <dl class="zab__facts">
+            <div><dt>Czas leczenia</dt><dd id="zabTime"></dd></div>
+            <div><dt>Wizyty</dt><dd id="zabVisits"></dd></div>
+            <div><dt>Cena</dt><dd id="zabPrice"></dd></div>
+          </dl>
+          <a class="btn btn--dark" href="#wizyta" id="zabBook">Umów konsultację w&nbsp;sprawie tego zabiegu</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="proces" id="proces" aria-labelledby="pro-h">
+  <div class="wrap">
+    <h2 id="pro-h" class="h2">Od konsultacji do nowego uśmiechu</h2>
+    <ol class="steps">
+      <li><span class="steps__n">1</span><h3>Konsultacja i&nbsp;skan 3D</h3><p>Godzina rozmowy, zdjęcia i&nbsp;skan zębów bez wycisków. Wychodzisz z&nbsp;planem leczenia i&nbsp;dokładną wyceną.</p></li>
+      <li><span class="steps__n">2</span><h3>Cyfrowy projekt uśmiechu</h3><p>Na zdjęciach twojej twarzy projektujemy kształt, długość i&nbsp;odcień zębów. Zmieniamy, dopóki projekt ci się nie spodoba.</p></li>
+      <li><span class="steps__n">3</span><h3>Próba w&nbsp;ustach</h3><p>Zakładamy tymczasowy model nowego uśmiechu. Widzisz go w&nbsp;lustrze i&nbsp;możesz pokazać bliskim — zanim cokolwiek oszlifujemy.</p></li>
+      <li><span class="steps__n">4</span><h3>Efekt i&nbsp;opieka</h3><p>Licówki powstają w&nbsp;naszej pracowni technicznej na miejscu. Po zabiegu przez 5 lat obejmuje cię gwarancja i&nbsp;bezpłatne kontrole.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="zespol" id="zespol" aria-labelledby="zes-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="zes-h" class="h2">Lekarze</h2>
+      <p>Każdy z&nbsp;nas zajmuje się jedną dziedziną. Dlatego przy złożonym leczeniu pracujemy w&nbsp;zespole.</p>
+    </div>
+    <div class="team">
+      <figure class="doc">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&q=80" alt="Dr Marta Wiśniewska" loading="lazy">
+        <figcaption><b>Dr Marta Wiśniewska</b><span>stomatologia estetyczna, licówki</span><small>założycielka, 16 lat praktyki</small></figcaption>
+      </figure>
+      <figure class="doc">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&q=80" alt="Dr Paweł Nowak" loading="lazy">
+        <figcaption><b>Dr Paweł Nowak</b><span>implantologia, chirurgia</span><small>ponad 3000 wszczepionych implantów</small></figcaption>
+      </figure>
+      <figure class="doc">
+        <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=700&q=80" alt="Lek. dent. Julia Zielińska" loading="lazy">
+        <figcaption><b>Lek. dent. Julia Zielińska</b><span>ortodoncja nakładkowa</span><small>certyfikowany lekarz systemu nakładek</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="klinika" aria-labelledby="kli-h">
+  <div class="wrap klinika__in">
+    <div class="klinika__text">
+      <h2 id="kli-h" class="h2">Klinika z&nbsp;widokiem na Monciak</h2>
+      <p>Trzy gabinety, własna pracownia protetyczna i&nbsp;tomograf na miejscu. Nie musisz jeździć na zdjęcia ani czekać tygodniami na laboratorium.</p>
+      <ul class="ticks">
+        <li>skaner wewnątrzustny zamiast wycisków</li>
+        <li>znieczulenie komputerowe bez&nbsp;bólu wkłucia</li>
+        <li>parking dla pacjentów na dziedzińcu</li>
+      </ul>
+    </div>
+    <div class="klinika__grid">
+      <img class="k1" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&q=80" alt="Jasny gabinet stomatologiczny z dużym oknem" loading="lazy">
+      <img class="k2" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=700&q=80" alt="Lekarz analizuje zdjęcia rentgenowskie" loading="lazy">
+      <img class="k3" src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=700&q=80" alt="Bambusowe szczoteczki do zębów" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="cennik" id="cennik" aria-labelledby="cen-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="cen-h" class="h2">Cennik</h2>
+      <p>Ceny orientacyjne. Dokładną wycenę dostajesz na piśmie po konsultacji. Leczenie od 3000 zł możesz rozłożyć na 0% raty.</p>
+    </div>
+    <table class="prices">
+      <caption class="sr">Cennik zabiegów</caption>
+      <tbody>
+        <tr><th scope="row">Konsultacja z&nbsp;projektem uśmiechu</th><td>odliczana od leczenia</td><td>250 zł</td></tr>
+        <tr><th scope="row">Licówka porcelanowa</th><td>za ząb</td><td>2 400 zł</td></tr>
+        <tr><th scope="row">Bonding kompozytowy</th><td>za ząb</td><td>800 zł</td></tr>
+        <tr><th scope="row">Wybielanie gabinetowe</th><td>jedna wizyta, 90 min</td><td>1 200 zł</td></tr>
+        <tr><th scope="row">Implant z&nbsp;koroną</th><td>z&nbsp;tomografią</td><td>od 5 900 zł</td></tr>
+        <tr><th scope="row">Ortodoncja nakładkowa</th><td>pełne leczenie</td><td>od 9 800 zł</td></tr>
+        <tr><th scope="row">Higienizacja</th><td>skaling, piaskowanie, fluoryzacja</td><td>380 zł</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="opinie" aria-labelledby="op-h">
+  <div class="wrap">
+    <h2 id="op-h" class="h2">Pacjenci o&nbsp;nas</h2>
+    <figure class="op__lead">
+      <blockquote>Bałam się, że licówki będą wyglądać sztucznie. Na próbie w&nbsp;ustach zobaczyłam swój uśmiech, tylko lepszy. Nikt nie zgadł, że to porcelana.</blockquote>
+      <figcaption><b>Agata, 34 lata</b> · 8 licówek porcelanowych</figcaption>
+    </figure>
+    <div class="op">
+      <figure><blockquote>Implant w&nbsp;jeden dzień z&nbsp;tymczasową koroną. Z&nbsp;kliniki wyszedłem z&nbsp;pełnym uśmiechem i&nbsp;bez bólu.</blockquote><figcaption><b>Tomasz, 52 lata</b> · implant</figcaption></figure>
+      <figure><blockquote>Nakładki przez 11 miesięcy, kontrola co 8 tygodni. Wszystko według planu, który dostałam na pierwszej wizycie.</blockquote><figcaption><b>Natalia, 27 lat</b> · ortodoncja nakładkowa</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq__in">
+    <h2 id="faq-h" class="h2">Częste pytania</h2>
+    <div class="faq__list">
+      <details><summary>Czy licówki niszczą zęby?</summary><p>Licówki porcelanowe wymagają zeszlifowania 0,3–0,5 mm szkliwa, czyli mniej niż grubość karty kredytowej. W&nbsp;wielu przypadkach stosujemy licówki bez szlifowania — powiemy to na konsultacji.</p></details>
+      <details><summary>Jak długo wytrzymują licówki?</summary><p>Przy dobrej higienie 15–20 lat. Na licówki z&nbsp;naszej pracowni dajemy 5 lat gwarancji pod warunkiem kontroli co pół roku.</p></details>
+      <details><summary>Czy zabiegi bolą?</summary><p>Stosujemy znieczulenie komputerowe, które podaje lek bardzo powoli — nie czujesz wkłucia. Wybielanie i&nbsp;bonding zwykle nie wymagają znieczulenia.</p></details>
+      <details><summary>Czy mogę rozłożyć leczenie na raty?</summary><p>Tak. Leczenie od 3000 zł rozłożysz na 10–24 raty 0% bez wychodzenia z&nbsp;kliniki. Decyzja zajmuje kilka minut.</p></details>
+      <details><summary>Ile trwa cała metamorfoza?</summary><p>Zwykle 3–4 tygodnie od konsultacji do założenia licówek: konsultacja, projekt, próba w&nbsp;ustach, przygotowanie i&nbsp;osadzenie.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="wizyta" id="wizyta" aria-labelledby="wiz-h">
+  <div class="wrap wizyta__in">
+    <div class="wizyta__aside">
+      <h2 id="wiz-h" class="h2">Umów konsultację</h2>
+      <p>Oddzwonimy w&nbsp;ciągu 2 godzin w&nbsp;dni robocze i&nbsp;zaproponujemy termin. Konsultacja trwa około godziny.</p>
+      <div class="card">
+        <p class="card__price"><strong>250 zł</strong><span>w&nbsp;całości odliczane od kosztu leczenia</span></p>
+        <ul class="ticks">
+          <li>skan 3D i&nbsp;zdjęcia</li>
+          <li>plan leczenia z&nbsp;wyceną na piśmie</li>
+          <li>cyfrowy projekt uśmiechu</li>
+        </ul>
+      </div>
+      <ul class="hours" id="hours">
+        <li data-d="1"><span>Poniedziałek – piątek</span><span>8:00–20:00</span></li>
+        <li data-d="6"><span>Sobota</span><span>9:00–14:00</span></li>
+        <li data-d="0"><span>Niedziela</span><span>zamknięte</span></li>
+      </ul>
+    </div>
+    <form class="form" id="form" novalidate>
+      <div id="formBody">
+        <div class="field">
+          <label for="zab">Co Cię interesuje?</label>
+          <select id="zab" name="zab"></select>
+        </div>
+        <fieldset class="field">
+          <legend>Kiedy Ci pasuje?</legend>
+          <div class="chips">
+            <label><input type="radio" name="pora" value="rano" checked><span>Rano<small>8–12</small></span></label>
+            <label><input type="radio" name="pora" value="poludnie"><span>W&nbsp;południe<small>12–16</small></span></label>
+            <label><input type="radio" name="pora" value="wieczor"><span>Wieczorem<small>16–20</small></span></label>
+            <label><input type="radio" name="pora" value="sobota"><span>Sobota<small>9–14</small></span></label>
+          </div>
+        </fieldset>
+        <div class="row2">
+          <div class="field"><label for="name">Imię i&nbsp;nazwisko</label><input id="name" name="name" autocomplete="name"><p class="err" id="name-err"></p></div>
+          <div class="field"><label for="phone">Telefon</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="600 100 200"><p class="err" id="phone-err"></p></div>
+        </div>
+        <div class="field"><label for="note">Krótko o&nbsp;Twojej sytuacji <span class="opt">(opcjonalnie)</span></label><textarea id="note" name="note" rows="3" placeholder="np. przebarwienia na przednich zębach, brak jednego zęba"></textarea></div>
+        <label class="consent"><input type="checkbox" id="consent" name="consent"><span>Zgadzam się na kontakt telefoniczny w&nbsp;sprawie wizyty.</span></label>
+        <p class="err" id="consent-err"></p>
+        <button class="btn btn--gold btn--lg btn--full" type="submit" id="submit">Poproś o&nbsp;termin</button>
+        <p class="form__note">Projekt demonstracyjny — formularz nie wysyła danych.</p>
+      </div>
+      <div class="done" id="done" hidden tabindex="-1">
+        <svg viewBox="0 0 32 16" aria-hidden="true"><path d="M2 3c7 13 21 13 28 0"/></svg>
+        <h3>Dziękujemy!</h3>
+        <p id="doneText"></p>
+        <button class="btn btn--line" type="button" id="again">Wyślij kolejne zgłoszenie</button>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <a class="brand" href="#top"><svg class="smile" viewBox="0 0 32 16" aria-hidden="true"><path d="M2 3c7 13 21 13 28 0"/></svg><span>PORCELANA</span></a>
+      <a class="btn btn--gold" href="#wizyta">Umów konsultację</a>
+    </div>
+    <div class="footer__grid">
+      <div><h3>Adres</h3><p>Bohaterów Monte Cassino 41<br>81-767 Sopot<br><a href="https://www.openstreetmap.org/?mlat=54.4446&amp;mlon=18.5663#map=17/54.4446/18.5663" target="_blank" rel="noopener">Pokaż na mapie</a></p></div>
+      <div><h3>Kontakt</h3><p><a href="tel:+48585550190">+48 58 555 01 90</a><br><a href="mailto:recepcja@porcelana.sopot.pl">recepcja@porcelana.sopot.pl</a></p></div>
+      <div><h3>Godziny</h3><p>pn–pt 8:00–20:00<br>sob 9:00–14:00</p></div>
+    </div>
+    <p class="footer__small">Projekt koncepcyjny do portfolio <a href="https://borkowskiprzemo098.github.io/PORTFOLIO/">PBDesign</a>. Klinika, lekarze, ceny i&nbsp;opinie są fikcyjne. Zdjęcia: Unsplash.</p>
+  </div>
+</footer>
+
+<a class="fab" href="#wizyta" id="fab">Umów konsultację</a>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>
