@@ -252,9 +252,11 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
   .wrap { width: calc(100% - 32px); }
   .brand span { font-size: 16px; letter-spacing: .24em; }
   .hero { justify-content: flex-end; padding-top: var(--header); }
-  .hero__bg img { width: 100%; height: 100%; top: 0; object-position: 50% 12%; -webkit-mask-image: none; mask-image: none; }
-  .hero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(238, 237, 235, 0) 38%, rgba(250, 248, 244, .9) 60%, rgba(250, 248, 244, .97) 100%); }
-  .hero__in { flex: none; padding-top: 40svh; padding-bottom: 24px; }
+  .hero__bg img { width: 100%; height: 46%; top: var(--header); object-position: 50% 32%; -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent 100%); mask-image: linear-gradient(180deg, #000 70%, transparent 100%); }
+  .hero__in { flex: none; padding-top: calc(46svh - 4px); padding-bottom: 24px; }
+  .hero h1 { margin-bottom: 14px; }
+  .hero__lead { margin-bottom: 20px; }
+  .hero__cta { gap: 10px; }
   .hero__note { display: none; }
   .hero__lead .more { display: none; }
   .hero h1 { font-size: clamp(36px, 10.5vw, 46px); }

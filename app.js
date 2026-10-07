@@ -148,7 +148,7 @@
   const fab = $('#fab');
   if ('IntersectionObserver' in window) {
     const seen = { hero: true, form: false };
-    const sync = () => fab.classList.toggle('is-hidden', seen.form || (seen.hero && window.innerWidth > 640));
+    const sync = () => fab.classList.toggle('is-hidden', seen.hero || seen.form);
     new IntersectionObserver(([en]) => { seen.hero = en.isIntersecting; sync(); }, { threshold: 0.2 }).observe($('.hero'));
     new IntersectionObserver(([en]) => { seen.form = en.isIntersecting; sync(); }, { threshold: 0 }).observe($('#wizyta'));
     sync();
