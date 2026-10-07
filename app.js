@@ -97,6 +97,26 @@
   });
   showZab(0);
 
+  // Panel przyjmuje wysokość najdłuższego zabiegu — przełączanie nie przesuwa strony i nic nie jest ucinane
+  const panel = $('#zabPanel');
+  function sizePanel() {
+    const cur = $('.zab__item').findIndex(b => b.classList.contains('is-on'));
+    panel.style.minHeight = '';
+    let max = 0;
+    ZAB.forEach((z, i) => {
+      $('#zabTitle').textContent = z.n; $('#zabDesc').textContent = z.d;
+      $('#zabTime').textContent = z.time; $('#zabVisits').textContent = z.visits; $('#zabPrice').textContent = z.price;
+      max = Math.max(max, panel.offsetHeight);
+    });
+    panel.style.minHeight = max + 'px';
+    showZab(cur < 0 ? 0 : cur);
+  }
+  let rT;
+  window.addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(sizePanel, 150); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizePanel);
+  window.addEventListener('load', sizePanel);
+  sizePanel();
+
   // --- formularz
   const sel = $('#zab');
   sel.innerHTML = ZAB.map(z => `<option value="${z.k}">${z.n}</option>`).join('') + '<option value="inne">Nie wiem jeszcze — chcę porozmawiać</option>';
