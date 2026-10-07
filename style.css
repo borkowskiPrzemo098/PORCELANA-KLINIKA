@@ -3,7 +3,7 @@
   --paper: #faf8f4;
   --stone: #efe9df;
   --stone-2: #e2d9ca;
-  --hero: #efe9df;
+  --hero: #f1ebe2;
   --gold: #c2a46c;
   --gold-hi: #d3b885;
   --gold-ink: #8a6a32;
@@ -72,7 +72,7 @@ section { padding-block: clamp(72px, 9vw, 128px); }
 /* hero */
 .hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; justify-content: center; padding: var(--header) 0 0; isolation: isolate; overflow: hidden; background: var(--hero); }
 .hero__bg { position: absolute; inset: 0; z-index: -1; }
-.hero__bg img { position: absolute; top: 0; right: 0; width: 56%; height: 100%; object-fit: cover; object-position: 50% 30%; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 26%); mask-image: linear-gradient(90deg, transparent 0, #000 26%); animation: settle 2.2s var(--ease) both; }
+.hero__bg img { position: absolute; top: 0; right: 0; width: 56%; height: 100%; object-fit: cover; object-position: 50% 62%; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 26%); mask-image: linear-gradient(90deg, transparent 0, #000 26%); animation: settle 2.2s var(--ease) both; }
 @keyframes settle { from { transform: scale(1.05); } }
 .hero__in { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 40px; }
 .hero h1 { font-size: clamp(44px, 6vw, 88px); font-weight: 500; line-height: 1; letter-spacing: -.035em; margin: 0 0 26px; max-width: 9.5em; text-wrap: balance; }
@@ -271,7 +271,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
   .wrap { width: calc(100% - 32px); }
   .brand span { font-size: 16px; letter-spacing: .24em; }
   .hero { justify-content: flex-end; padding-top: var(--header); }
-  .hero__bg img { width: 100%; height: 46%; top: var(--header); object-position: 50% 32%; -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent 100%); mask-image: linear-gradient(180deg, #000 70%, transparent 100%); }
+  .hero__bg img { width: 100%; height: 46%; top: var(--header); object-position: 50% 62%; -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent 100%); mask-image: linear-gradient(180deg, #000 70%, transparent 100%); }
   .hero__in { flex: none; padding-top: calc(46svh - 4px); padding-bottom: 24px; }
   .hero h1 { margin-bottom: 14px; }
   .hero__lead { margin-bottom: 20px; }
