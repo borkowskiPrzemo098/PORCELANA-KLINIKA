@@ -1,0 +1,98 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-radius",
+        "value": "4px",
+        "createdAt": "2026-10-07T16:15:55.793Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-07T16:15:55.915Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "3px",
+        "createdAt": "2026-10-07T16:15:56.012Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "1.5)",
+        "createdAt": "2026-10-07T16:15:56.127Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "1.6)",
+        "createdAt": "2026-10-07T16:15:56.243Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-07T16:15:56.351Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "20px",
+        "createdAt": "2026-10-07T16:15:56.458Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "84px",
+        "createdAt": "2026-10-07T16:15:56.569Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "30px",
+        "createdAt": "2026-10-07T16:15:56.677Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "42px",
+        "createdAt": "2026-10-07T16:15:56.784Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "68px",
+        "createdAt": "2026-10-07T16:15:56.891Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "46px",
+        "createdAt": "2026-10-07T16:15:57.001Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#000",
+        "createdAt": "2026-10-07T16:15:57.114Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d8d1c4",
+        "createdAt": "2026-10-07T16:15:57.219Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(0, 0, 0, .3)",
+        "createdAt": "2026-10-07T16:15:57.315Z",
+        "reason": "agent decision: shipped values from the user-requested reviews rebuild and rectangular buttons; DESIGN.md prose updated, scale entries not exhaustive"
+      }
+    ]
+  }
+}

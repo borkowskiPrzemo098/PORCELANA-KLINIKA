@@ -94,7 +94,8 @@ rounded:
   base: "14px"
   surface: "21px"
   form: "22.4px"
-  pill: "999px"
+  button: "4px"
+  card: "6px"
   circle: "50%"
 spacing:
   gutter-sm: "14px"
@@ -108,7 +109,7 @@ components:
     backgroundColor: "{colors.champagne}"
     textColor: "{colors.graphite}"
     typography: "{typography.button}"
-    rounded: "{rounded.pill}"
+    rounded: "{rounded.button}"
     padding: "14px 28px"
     height: "52px"
   button-primary-hover:
@@ -116,14 +117,14 @@ components:
   button-dark:
     backgroundColor: "{colors.graphite}"
     textColor: "{colors.white}"
-    rounded: "{rounded.pill}"
+    rounded: "{rounded.button}"
     padding: "14px 28px"
   button-dark-hover:
     backgroundColor: "{colors.graphite-hover}"
   button-line:
     backgroundColor: "{colors.button-veil}"
     textColor: "{colors.graphite}"
-    rounded: "{rounded.pill}"
+    rounded: "{rounded.button}"
     padding: "14px 28px"
   button-line-hover:
     backgroundColor: "{colors.graphite}"
@@ -172,14 +173,14 @@ components:
 
 **Creative North Star: "The Porcelain Atelier"**
 
-A clinic that reads like a ceramist's studio, not a surgery with blue tiles. Warm white and pale stone carry almost every surface; champagne gold appears as one thin smile curve, the primary pill, the step rings, and once as a full-bleed field for patient voices. Graphite type sits on top in a single humanist sans at medium weight, sentence case, large. Depth comes from alternating grounds (white, stone, gold, graphite), not from boxes and shadows.
+A clinic that reads like a ceramist's studio, not a surgery with blue tiles. Warm white and pale stone carry almost every surface; champagne gold appears as one thin smile curve, the primary button, the step rings, and once as a full-bleed field for patient voices. Graphite type sits on top in a single humanist sans at medium weight, sentence case, large. Depth comes from alternating grounds (white, stone, gold, graphite), not from boxes and shadows.
 
 The page is light from the first pixel. The hero is a pale ground (hero-ground) with the patient portrait masked into it from the right, so photo and page are one surface. Sections alternate white and stone; content sits on full fields and hairline-ruled lists rather than tiled cards. Motion is quiet: a 2.2s settle on the hero image, 2px hover lifts on buttons, gold underline sweeps in the nav, and nothing that shifts layout.
 
 **Key Characteristics:**
 - Light, warm, low-contrast grounds with one gold accent family.
 - Albert Sans 400–600 only, sentence case everywhere except the PORCELANA wordmark.
-- Pill buttons, gently rounded surfaces (14px base), circular step rings.
+- Rectangular buttons (4px corners, user decision 2026-10-07), 6px review cards and panels, circular step rings.
 - Hairline rules (1px line, 1.5px graphite top rule) structure lists, tables and FAQ.
 - The gold smile curve is the only mark and the only ornament.
 
@@ -240,7 +241,7 @@ Warm neutrals stepped from white to stone, one champagne gold in three strengths
 
 ## Layout
 
-Container min(1240px, 100% - 40px) (100% - 32px under 640px). Sections pad clamp(72px, 9vw, 128px) vertically; section heads are a split row (headline left, a short 46ch note right, 44px below). Two-column grids are asymmetric (.7–.85fr text to 1.15–1.6fr content) and collapse to one column at 1000px. Rhythm: 6px list gaps, 14px tight gutters, 24px card gutters, 28px block gaps, 40–56px between larger groups. The hero is full-viewport with the portrait in the right 56%, text left; under 640px the portrait takes the top 46% and fades down into the ground. A fixed gold pill CTA appears at the bottom on tablet and mobile, hidden while hero or form are in view. Header is 76px (64px mobile), transparent over the hero, veiled white once scrolled.
+Container min(1240px, 100% - 40px) (100% - 32px under 640px). Sections pad clamp(72px, 9vw, 128px) vertically; section heads are a split row (headline left, a short 46ch note right, 44px below). Two-column grids are asymmetric (.7–.85fr text to 1.15–1.6fr content) and collapse to one column at 1000px. Rhythm: 6px list gaps, 14px tight gutters, 24px card gutters, 28px block gaps, 40–56px between larger groups. The hero is full-viewport with the portrait in the right 56%, text left; under 640px the portrait takes the top 46% and fades down into the ground. A fixed gold CTA appears at the bottom on tablet and mobile, hidden while hero or form are in view. Header is 76px (64px mobile), transparent over the hero, veiled white once scrolled.
 
 ## Elevation & Depth
 
@@ -258,14 +259,14 @@ Flat by default; depth is tonal (white, paper, stone, gold, graphite fields alte
 
 ## Shapes
 
-Porcelain-soft: rounded but never bubbly. Base radius 14px on list items; 21px (1.5x) on panels, photos and cards; 22.4px on the form; 12px on inputs and chips; full pills for every button; circles for step rings and status dots. Photos are always rounded at 21px except the hero portrait, which is masked, not framed. Lines are 1px line-color hairlines, with 1.5px graphite top rules opening tables, the FAQ and testimonials.
+Porcelain-soft: rounded but never bubbly. Base radius 14px on list items; 21px (1.5x) on panels, photos and cards; 22.4px on the form; 12px on inputs and chips; 4px rectangles for every button (user rejected pills); circles for step rings and status dots. Photos are always rounded at 21px except the hero portrait, which is masked, not framed. Lines are 1px line-color hairlines, with 1.5px graphite top rules opening tables, the FAQ and testimonials.
 
 **The Smile Curve Rule.** The only mark is one SVG path (`M2 3c7 13 21 13 28 0`, 32x16, round caps, 2.4–2.6 stroke) in champagne: beside the wordmark, as the testimonial mark (graphite on gold), and drawn in on form success.
 
 ## Components
 
 ### Buttons
-- **Shape:** full pill (999px), 1.5px border, min-height 52px (58px large, 46px in nav).
+- **Shape:** rectangle, 4px corners, 1.5px border, min-height 52px (58px large, 46px in nav).
 - **Primary:** champagne fill, graphite text, 600 16px, 14px 28px padding (16px 32px large, 17px), gold glow shadow.
 - **Hover / Focus:** champagne-bright and a 2px lift over .25s with cubic-bezier(.16, 1, .3, 1); focus is a 2px champagne-ink outline at 3px offset.
 - **Dark:** graphite fill, white text; hover graphite-hover with lift. Used inside the treatment panel.
@@ -287,26 +288,26 @@ Porcelain-soft: rounded but never bubbly. Base radius 14px on list items; 21px (
 - **Error:** error-brick border and 14px 500 message below.
 
 ### Navigation
-- 16px 500 graphite links, 30px apart, with a 2px gold underline that sweeps in on hover; gold pill CTA at the end. Under 1000px a two-bar burger opens a white sheet with ruled 17px rows and a full-width CTA.
+- 16px 500 graphite links, 30px apart, with a 2px gold underline that sweeps in on hover; gold CTA at the end. Under 1000px a two-bar burger opens a white sheet with ruled 17px rows and a full-width CTA.
 
 ### Treatment Picker (signature)
-A tab list of treatments (list-item type, "od" price in 14px soft graphite) beside a paper panel split image | body. Active item takes stone; hover takes paper. The panel shows title, description, a ruled fact list (time, visits, price in tabular 600) and a dark pill CTA pinned to the bottom. Image swaps fade to .3 opacity, no layout movement.
+A tab list of treatments (list-item type, "od" price in 14px soft graphite) beside a paper panel split image | body. Active item takes stone; hover takes paper. The panel shows title, description, a ruled fact list (time, visits, price in tabular 600) and a dark CTA pinned to the bottom. Image swaps fade to .3 opacity, no layout movement.
 
 ### Numbered Process
 Four columns joined by a 1.5px gold-line rule through 56px white circles with 1.5px champagne border and 22px 600 champagne-ink numerals; 21px titles, 16px soft text. Stacks with the rule removed under 1000px.
 
 ### Patient Voices Field
-Full champagne section: graphite smile mark, 36px lead quote, then two quotes under 1.5px graphite top rules; captions in on-gold-muted with graphite names.
+Stone section: a graphite score panel (84px average, gold stars, distribution bars, recommendation figure) beside a 2x2 grid of white review cards (initials avatar, name and city, stars, quote, treatment tag). Cards and panel use 6px corners.
 
 ### Footer
-Graphite ground, footer-text copy, champagne-bright headings and small-print links, white links, footer-rule divider, wordmark at 24px with a gold pill CTA.
+Graphite ground, footer-text copy, champagne-bright headings and small-print links, white links, footer-rule divider, wordmark at 24px with a gold CTA.
 
 ## Do's and Don'ts
 
 ### Do:
 - **Do** keep every surface on white, paper, stone, hero-ground, champagne or graphite.
 - **Do** put graphite text on champagne, and use champagne-ink for gold text on white or paper.
-- **Do** use pills for every button and 14/21px radii for surfaces.
+- **Do** use 4px rectangles for every button and 14/21px radii for surfaces.
 - **Do** separate lists, prices and FAQ with 1px line hairlines under a 1.5px graphite top rule.
 - **Do** match a hero ground to its photo's backdrop and mask the photo into it.
 - **Do** keep motion to colour, 2px lifts and opacity; honour prefers-reduced-motion.
