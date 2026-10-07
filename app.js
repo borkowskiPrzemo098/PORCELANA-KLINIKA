@@ -113,7 +113,7 @@
   }
   let rT, lastW = 0;
   const relayout = () => { const w = panel.offsetWidth; if (w === lastW) return; lastW = w; clearTimeout(rT); rT = setTimeout(sizePanel, 100); };
-  if ('ResizeObserver' in window) new ResizeObserver(relayout).observe();
+  if ('ResizeObserver' in window) new ResizeObserver(relayout).observe(panel);
   window.addEventListener('resize', relayout);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizePanel);
   window.addEventListener('load', sizePanel);
