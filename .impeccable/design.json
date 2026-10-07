@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T16:08:51.947Z",
+  "title": "Design System: PORCELANA",
+  "extensions": {
+    "colorMeta": {
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#424242",
+          "#5e5e5e",
+          "#7a7a7a",
+          "#999999",
+          "#b8b8b8",
+          "#d6d6d6",
+          "#f2f2f2"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Porcelain Paper",
+        "canonical": "#faf8f4",
+        "tonalRamp": [
+          "#352b18",
+          "#5b4b29",
+          "#826a3b",
+          "#a88a4d",
+          "#bfa673",
+          "#d2c19d",
+          "#e5dbc7",
+          "#f7f4ed"
+        ]
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Stone",
+        "canonical": "#efe9df",
+        "tonalRamp": [
+          "#33291a",
+          "#58482c",
+          "#7e663f",
+          "#a38552",
+          "#bba277",
+          "#cfbea0",
+          "#e4dac9",
+          "#f7f3ee"
+        ]
+      },
+      "hero-ground": {
+        "role": "neutral",
+        "displayName": "Hero Ground",
+        "canonical": "#eeedeb",
+        "tonalRamp": [
+          "#292723",
+          "#48443d",
+          "#666157",
+          "#847e70",
+          "#a19c91",
+          "#bdbab2",
+          "#dad7d3",
+          "#f3f3f1"
+        ]
+      },
+      "champagne": {
+        "role": "primary",
+        "displayName": "Champagne Gold",
+        "canonical": "#c2a46c",
+        "tonalRamp": [
+          "#362b16",
+          "#5e4b27",
+          "#856a37",
+          "#ad8a48",
+          "#c3a66f",
+          "#d5c19a",
+          "#e7dbc5",
+          "#f8f4ed"
+        ]
+      },
+      "champagne-bright": {
+        "role": "primary",
+        "displayName": "Bright Champagne",
+        "canonical": "#d3b885",
+        "tonalRamp": [
+          "#382c14",
+          "#614c23",
+          "#8b6c32",
+          "#b48c41",
+          "#c9a869",
+          "#d9c296",
+          "#e9dcc3",
+          "#f8f4ec"
+        ]
+      },
+      "champagne-ink": {
+        "role": "primary",
+        "displayName": "Champagne Ink",
+        "canonical": "#8a6a32",
+        "tonalRamp": [
+          "#382b14",
+          "#614b23",
+          "#8b6a32",
+          "#b48a41",
+          "#c9a669",
+          "#d9c196",
+          "#e9dbc3",
+          "#f8f4ec"
+        ]
+      },
+      "gold-line": {
+        "role": "primary",
+        "displayName": "Gold Line",
+        "canonical": "#d9c49b",
+        "tonalRamp": [
+          "#372c15",
+          "#604c25",
+          "#896c34",
+          "#b18c43",
+          "#c7a86b",
+          "#d8c298",
+          "#e9dcc4",
+          "#f8f4ed"
+        ]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#1f1d1a",
+        "tonalRamp": [
+          "#2a2723",
+          "#48433c",
+          "#676056",
+          "#857d70",
+          "#a29b90",
+          "#beb9b1",
+          "#dad7d3",
+          "#f3f2f1"
+        ]
+      },
+      "graphite-soft": {
+        "role": "neutral",
+        "displayName": "Soft Graphite",
+        "canonical": "#57524a",
+        "tonalRamp": [
+          "#292723",
+          "#48443d",
+          "#666057",
+          "#847d71",
+          "#a19b91",
+          "#bdb9b2",
+          "#d9d7d3",
+          "#f3f2f1"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "#e7e0d4",
+        "tonalRamp": [
+          "#31291b",
+          "#55472f",
+          "#796544",
+          "#9d8458",
+          "#b6a17c",
+          "#ccbda3",
+          "#e2d9cb",
+          "#f6f3ef"
+        ]
+      },
+      "error-brick": {
+        "role": "error",
+        "displayName": "Error Brick",
+        "canonical": "#a5361f",
+        "tonalRamp": [
+          "#3d170f",
+          "#6a281b",
+          "#973926",
+          "#c44a31",
+          "#d6715c",
+          "#e29b8d",
+          "#efc6be",
+          "#faedeb"
+        ]
+      },
+      "open-green": {
+        "role": "success",
+        "displayName": "Open Green",
+        "canonical": "#3f7a3a",
+        "tonalRamp": [
+          "#1b3419",
+          "#2e5a2b",
+          "#42803d",
+          "#56a64f",
+          "#7abd75",
+          "#a2d19e",
+          "#cae5c8",
+          "#eef7ee"
+        ]
+      },
+      "graphite-hover": {
+        "role": "neutral",
+        "displayName": "Graphite Hover",
+        "canonical": "#3a362f",
+        "tonalRamp": [
+          "#2a2722",
+          "#49443b",
+          "#686154",
+          "#877e6e",
+          "#a49c8e",
+          "#bfbab0",
+          "#dad7d2",
+          "#f4f3f1"
+        ]
+      },
+      "on-gold-muted": {
+        "role": "neutral",
+        "displayName": "On-Gold Muted",
+        "canonical": "#3a3227",
+        "tonalRamp": [
+          "#2e271f",
+          "#4f4435",
+          "#71614c",
+          "#927e62",
+          "#ad9c85",
+          "#c6baaa",
+          "#ded7ce",
+          "#f5f3f0"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder",
+        "canonical": "#8b8478",
+        "tonalRamp": [
+          "#292723",
+          "#47443d",
+          "#656057",
+          "#847d71",
+          "#a19b91",
+          "#bdb9b2",
+          "#d9d7d3",
+          "#f3f3f1"
+        ]
+      },
+      "footer-text": {
+        "role": "neutral",
+        "displayName": "Footer Text",
+        "canonical": "#e9e3d8",
+        "tonalRamp": [
+          "#31291c",
+          "#554830",
+          "#796644",
+          "#9d8458",
+          "#b5a17d",
+          "#cbbda4",
+          "#e2dacb",
+          "#f6f3ef"
+        ]
+      },
+      "footer-rule": {
+        "role": "neutral",
+        "displayName": "Footer Rule",
+        "canonical": "#3d3830",
+        "tonalRamp": [
+          "#2b2722",
+          "#4a443a",
+          "#6a6153",
+          "#897e6c",
+          "#a59c8d",
+          "#c0baaf",
+          "#dbd7d1",
+          "#f4f3f1"
+        ]
+      },
+      "footer-muted": {
+        "role": "neutral",
+        "displayName": "Footer Muted",
+        "canonical": "#b9b1a3",
+        "tonalRamp": [
+          "#2b2821",
+          "#4b4539",
+          "#6b6252",
+          "#8b7f6a",
+          "#a79d8b",
+          "#c1baae",
+          "#dcd8d1",
+          "#f4f3f1"
+        ]
+      },
+      "header-veil": {
+        "role": "overlay",
+        "displayName": "Header Veil",
+        "canonical": "rgba(255, 255, 255, .96)"
+      },
+      "bar-veil": {
+        "role": "overlay",
+        "displayName": "Bar Veil",
+        "canonical": "rgba(255, 255, 255, .85)"
+      },
+      "button-veil": {
+        "role": "overlay",
+        "displayName": "Button Veil",
+        "canonical": "rgba(255, 255, 255, .7)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "panel-title": {
+        "displayName": "Panel Title",
+        "purpose": "Treatment panel heading."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Lead testimonial on the gold field."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step titles, doctor names."
+      },
+      "list-item": {
+        "displayName": "List Item",
+        "purpose": "Treatment items, price rows, FAQ summaries."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero lead."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels, footer headings, status."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Pill buttons and nav."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Errors, notes, small print."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "PORCELANA logotype only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "gold-glow",
+        "value": "0 10px 24px -14px rgba(138, 106, 50, .9)",
+        "purpose": "Under gold buttons."
+      },
+      {
+        "name": "form-lift",
+        "value": "0 30px 60px -40px rgba(60, 45, 20, .45)",
+        "purpose": "Booking form."
+      },
+      {
+        "name": "fab",
+        "value": "0 14px 28px -12px rgba(60, 45, 20, .55)",
+        "purpose": "Mobile floating CTA."
+      },
+      {
+        "name": "menu-drop",
+        "value": "0 24px 30px -24px rgba(0, 0, 0, .3)",
+        "purpose": "Mobile nav sheet."
+      },
+      {
+        "name": "header-rule",
+        "value": "0 1px 0 #e7e0d4",
+        "purpose": "Solid header bottom edge."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-porcelain",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "All lifts, underline sweeps, burger, FAQ plus, FAB."
+      },
+      {
+        "name": "state",
+        "value": ".2s-.3s",
+        "purpose": "Colour and border state changes."
+      },
+      {
+        "name": "hero-settle",
+        "value": "2.2s scale(1.05) to 1",
+        "purpose": "Hero portrait on load."
+      },
+      {
+        "name": "smile-draw",
+        "value": ".9s stroke-dashoffset 40 to 0, .15s delay",
+        "purpose": "Smile curve on form success."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold pill for every booking action.",
+      "html": "<button class=\"ds-btn ds-btn-gold\">Umów konsultację</button>",
+      "css": ":host{--white:#fff;--paper:#faf8f4;--stone:#efe9df;--gold:#c2a46c;--gold-hi:#d3b885;--gold-ink:#8a6a32;--gold-line:#d9c49b;--ink:#1f1d1a;--ink-2:#57524a;--line:#e7e0d4;--ease:cubic-bezier(.16,1,.3,1);--font:\"Albert Sans\",system-ui,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 28px;border-radius:999px;font:600 16px/1.15 var(--font);border:1.5px solid transparent;cursor:pointer;transition:background-color .25s,color .25s,transform .25s var(--ease)}.ds-btn:focus-visible{outline:2px solid var(--gold-ink);outline-offset:3px}.ds-btn:active{transform:none}.ds-btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 10px 24px -14px rgba(138,106,50,.9)}.ds-btn-gold:hover{background:var(--gold-hi);transform:translateY(-2px)}"
+    },
+    {
+      "name": "Dark Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "Graphite pill inside the treatment panel.",
+      "html": "<button class=\"ds-btn ds-btn-dark\">Umów konsultację w sprawie tego zabiegu</button>",
+      "css": ":host{--white:#fff;--paper:#faf8f4;--stone:#efe9df;--gold:#c2a46c;--gold-hi:#d3b885;--gold-ink:#8a6a32;--gold-line:#d9c49b;--ink:#1f1d1a;--ink-2:#57524a;--line:#e7e0d4;--ease:cubic-bezier(.16,1,.3,1);--font:\"Albert Sans\",system-ui,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 28px;border-radius:999px;font:600 16px/1.15 var(--font);border:1.5px solid transparent;cursor:pointer;transition:background-color .25s,color .25s,transform .25s var(--ease)}.ds-btn:focus-visible{outline:2px solid var(--gold-ink);outline-offset:3px}.ds-btn:active{transform:none}.ds-btn-dark{background:var(--ink);color:#fff}.ds-btn-dark:hover{background:#3a362f;transform:translateY(-2px)}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary outline pill; inverts on hover.",
+      "html": "<button class=\"ds-btn ds-btn-line\">Zobacz cennik</button>",
+      "css": ":host{--white:#fff;--paper:#faf8f4;--stone:#efe9df;--gold:#c2a46c;--gold-hi:#d3b885;--gold-ink:#8a6a32;--gold-line:#d9c49b;--ink:#1f1d1a;--ink-2:#57524a;--line:#e7e0d4;--ease:cubic-bezier(.16,1,.3,1);--font:\"Albert Sans\",system-ui,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 28px;border-radius:999px;font:600 16px/1.15 var(--font);border:1.5px solid transparent;cursor:pointer;transition:background-color .25s,color .25s,transform .25s var(--ease)}.ds-btn:focus-visible{outline:2px solid var(--gold-ink);outline-offset:3px}.ds-btn:active{transform:none}.ds-btn-line{background:rgba(255,255,255,.7);color:var(--ink);border-color:var(--ink)}.ds-btn-line:hover{background:var(--ink);color:#fff}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Paper field, gold border on focus.",
+      "html": "<label class=\"ds-field\"><span>Telefon</span><input placeholder=\"600 100 200\"></label>",
+      "css": ":host{--white:#fff;--paper:#faf8f4;--stone:#efe9df;--gold:#c2a46c;--gold-hi:#d3b885;--gold-ink:#8a6a32;--gold-line:#d9c49b;--ink:#1f1d1a;--ink-2:#57524a;--line:#e7e0d4;--ease:cubic-bezier(.16,1,.3,1);--font:\"Albert Sans\",system-ui,sans-serif}.ds-field{display:block;font-family:var(--font)}.ds-field span{display:block;font-size:15px;font-weight:600;margin-bottom:8px;color:var(--ink)}.ds-field input{display:block;width:100%;box-sizing:border-box;min-height:54px;padding:13px 16px;font:400 16px/1.3 var(--font);color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:12px;caret-color:var(--gold-ink);transition:border-color .2s,background-color .2s}.ds-field input::placeholder{color:#8b8478}.ds-field input:focus{outline:none;border-color:var(--gold);background:#fff}"
+    },
+    {
+      "name": "Time Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio tiles for preferred time; graphite when selected.",
+      "html": "<div class=\"ds-chips\"><label><input type=\"radio\" name=\"p\" checked><span>Rano<small>8–12</small></span></label><label><input type=\"radio\" name=\"p\"><span>Wieczorem<small>16–20</small></span></label></div>",
+      "css": ":host{--white:#fff;--paper:#faf8f4;--stone:#efe9df;--gold:#c2a46c;--gold-hi:#d3b885;--gold-ink:#8a6a32;--gold-line:#d9c49b;--ink:#1f1d1a;--ink-2:#57524a;--line:#e7e0d4;--ease:cubic-bezier(.16,1,.3,1);--font:\"Albert Sans\",system-ui,sans-serif}.ds-chips{display:grid;grid-template-columns:repeat(2,140px);gap:8px;font-family:var(--font)}.ds-chips label{position:relative}.ds-chips input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}.ds-chips span{display:grid;gap:2px;text-align:center;padding:12px 6px;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);font-weight:600;color:var(--ink);transition:border-color .2s,background-color .2s,color .2s}.ds-chips small{font-weight:400;font-size:13.5px;color:var(--ink-2)}.ds-chips label:hover span{border-color:var(--gold)}.ds-chips input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}.ds-chips input:checked+span small{color:var(--gold-hi)}.ds-chips input:focus-visible+span{outline:2px solid var(--gold-ink);outline-offset:3px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Smile-curve wordmark, links with gold underline sweep, gold pill CTA.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\"><svg class=\"ds-smile\" viewBox=\"0 0 32 16\" aria-hidden=\"true\"><path d=\"M2 3c7 13 21 13 28 0\"/></svg><span>PORCELANA</span></a><a href=\"#\">Zabiegi</a><a href=\"#\">Cennik</a><a class=\"ds-cta\" href=\"#\">Umów konsultację</a></nav>",
+      "css": ":host{--white:#fff;--paper:#faf8f4;--stone:#efe9df;--gold:#c2a46c;--gold-hi:#d3b885;--gold-ink:#8a6a32;--gold-line:#d9c49b;--ink:#1f1d1a;--ink-2:#57524a;--line:#e7e0d4;--ease:cubic-bezier(.16,1,.3,1);--font:\"Albert Sans\",system-ui,sans-serif}.ds-nav{display:flex;align-items:center;gap:30px;font-family:var(--font);background:#fff;padding:14px 20px}.ds-brand{display:inline-flex;align-items:center;gap:12px;margin-right:auto;color:var(--ink);text-decoration:none}.ds-brand span{font-size:19px;font-weight:600;letter-spacing:.28em}.ds-smile{width:30px;height:15px;fill:none;stroke:var(--gold);stroke-width:2.6;stroke-linecap:round}.ds-nav a:not(.ds-cta):not(.ds-brand){color:var(--ink);font-size:16px;font-weight:500;text-decoration:none;padding-block:6px;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 2px no-repeat;transition:background-size .35s var(--ease)}.ds-nav a:not(.ds-cta):not(.ds-brand):hover{background-size:100% 2px}.ds-cta{display:inline-flex;align-items:center;min-height:46px;padding:10px 22px;border-radius:999px;background:var(--gold);color:var(--ink);font-weight:600;font-size:15px;text-decoration:none}.ds-cta:hover{background:var(--gold-hi)}"
+    },
+    {
+      "name": "Consultation Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "The one bordered card: price figure and ticked inclusions on stone.",
+      "html": "<div class=\"ds-wrap\"><div class=\"ds-card\"><p class=\"ds-price\"><strong>250 zł</strong><span>w całości odliczane od kosztu leczenia</span></p><ul class=\"ds-ticks\"><li>skan 3D i zdjęcia</li><li>cyfrowy projekt uśmiechu</li></ul></div></div>",
+      "css": ":host{--white:#fff;--paper:#faf8f4;--stone:#efe9df;--gold:#c2a46c;--gold-hi:#d3b885;--gold-ink:#8a6a32;--gold-line:#d9c49b;--ink:#1f1d1a;--ink-2:#57524a;--line:#e7e0d4;--ease:cubic-bezier(.16,1,.3,1);--font:\"Albert Sans\",system-ui,sans-serif}.ds-wrap{background:var(--stone);padding:24px;font-family:var(--font);color:var(--ink)}.ds-card{background:#fff;border:1px solid var(--line);border-radius:21px;padding:26px 28px}.ds-price{margin:0;display:grid}.ds-price strong{font-size:42px;font-weight:500;letter-spacing:-.02em;line-height:1.1}.ds-price span{color:var(--gold-ink);font-weight:500}.ds-ticks{list-style:none;padding:18px 0 0;margin:18px 0 0;border-top:1px solid var(--line);display:grid;gap:10px}.ds-ticks li{display:flex;gap:12px;align-items:baseline}.ds-ticks li::before{content:\"\";width:14px;height:7px;border:solid var(--gold-ink);border-width:0 0 2px 2px;transform:rotate(-45deg) translateY(-3px);flex:none}"
+    },
+    {
+      "name": "Treatment Picker",
+      "kind": "custom",
+      "refersTo": "treatment-item",
+      "description": "Signature: treatment tabs beside a paper panel with ruled facts and price.",
+      "html": "<div class=\"ds-zab\"><div class=\"ds-list\"><button class=\"is-on\">Licówki porcelanowe<small>od 2 400 zł</small></button><button>Wybielanie<small>1 200 zł</small></button></div><div class=\"ds-panel\"><h3>Licówki porcelanowe</h3><dl><div><dt>Czas leczenia</dt><dd>3–4 tygodnie</dd></div><div><dt>Cena</dt><dd>od 2 400 zł</dd></div></dl></div></div>",
+      "css": ":host{--white:#fff;--paper:#faf8f4;--stone:#efe9df;--gold:#c2a46c;--gold-hi:#d3b885;--gold-ink:#8a6a32;--gold-line:#d9c49b;--ink:#1f1d1a;--ink-2:#57524a;--line:#e7e0d4;--ease:cubic-bezier(.16,1,.3,1);--font:\"Albert Sans\",system-ui,sans-serif}.ds-zab{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;font-family:var(--font);color:var(--ink)}.ds-list{display:grid;gap:6px;align-content:start}.ds-list button{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 20px;border:0;border-radius:14px;background:transparent;color:var(--ink);font:500 19px/1.3 var(--font);text-align:left;cursor:pointer;transition:background-color .25s}.ds-list small{font-size:14px;color:var(--ink-2);font-weight:400}.ds-list button:hover{background:var(--paper)}.ds-list button.is-on{background:var(--stone)}.ds-list button:focus-visible{outline:2px solid var(--gold-ink);outline-offset:3px}.ds-panel{background:var(--paper);border-radius:21px;padding:32px}.ds-panel h3{font-size:30px;font-weight:500;letter-spacing:-.02em;margin:0 0 14px}.ds-panel dl{margin:0;border-top:1px solid var(--line)}.ds-panel dl div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)}.ds-panel dt{color:var(--ink-2)}.ds-panel dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Process Step",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Numbered circle on a gold connector line.",
+      "html": "<ol class=\"ds-steps\"><li><span>1</span><h3>Konsultacja i skan 3D</h3></li><li><span>2</span><h3>Cyfrowy projekt uśmiechu</h3></li></ol>",
+      "css": ":host{--white:#fff;--paper:#faf8f4;--stone:#efe9df;--gold:#c2a46c;--gold-hi:#d3b885;--gold-ink:#8a6a32;--gold-line:#d9c49b;--ink:#1f1d1a;--ink-2:#57524a;--line:#e7e0d4;--ease:cubic-bezier(.16,1,.3,1);--font:\"Albert Sans\",system-ui,sans-serif}.ds-steps{list-style:none;margin:0;padding:24px;display:grid;grid-template-columns:repeat(2,1fr);position:relative;background:var(--stone);font-family:var(--font);color:var(--ink)}.ds-steps::before{content:\"\";position:absolute;left:24px;right:24px;top:51px;height:1.5px;background:var(--gold-line)}.ds-steps li{position:relative;padding-right:28px}.ds-steps span{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#fff;border:1.5px solid var(--gold);font-size:22px;font-weight:600;color:var(--gold-ink);margin-bottom:26px;position:relative}.ds-steps h3{font-size:21px;font-weight:600;line-height:1.25;margin:0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Porcelain Atelier",
+    "overview": "A clinic that reads like a ceramist's studio, not a surgery with blue tiles. Warm white and pale stone carry almost every surface; champagne gold appears as one thin smile curve, the primary pill, the step rings, and once as a full-bleed field for patient voices. Graphite type sits on top in a single humanist sans at medium weight, sentence case, large. Depth comes from alternating grounds (white, stone, gold, graphite), not from boxes and shadows.\n\nThe page is light from the first pixel. The hero is a pale ground (hero-ground) with the patient portrait masked into it from the right, so photo and page are one surface. Sections alternate white and stone; content sits on full fields and hairline-ruled lists rather than tiled cards. Motion is quiet: a 2.2s settle on the hero image, 2px hover lifts on buttons, gold underline sweeps in the nav, and nothing that shifts layout.",
+    "keyCharacteristics": [
+      "Light, warm, low-contrast grounds with one gold accent family.",
+      "Albert Sans 400–600 only, sentence case everywhere except the PORCELANA wordmark.",
+      "Pill buttons, gently rounded surfaces (14px base), circular step rings.",
+      "Hairline rules (1px line, 1.5px graphite top rule) structure lists, tables and FAQ.",
+      "The gold smile curve is the only mark and the only ornament."
+    ],
+    "rules": [
+      {
+        "name": "The One Gold Rule",
+        "body": "Gold is one family in three strengths: champagne fills, champagne-bright on dark and on hover, champagne-ink as text. No second accent hue; green and brick exist only as status.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-On-Gold Rule",
+        "body": "Anything on a champagne fill is graphite, never white.",
+        "section": "colors"
+      },
+      {
+        "name": "The Gold Text Ground Rule",
+        "body": "champagne-ink as body-size text sits on white or paper only; on stone it falls under 4.5:1.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "All text is sentence case. The tracked capitals of the PORCELANA wordmark are a logotype, not a style to reuse for labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Medium Ceiling Rule",
+        "body": "Headings top out at 500, UI at 600. Weight 700 is loaded but never used.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Price Rule",
+        "body": "Prices, hours and fact values use tabular numerals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Fields Not Cards Rule",
+        "body": "Separate content with ground changes and hairlines. Only the form and the consultation card are bounded surfaces.",
+        "section": "elevation & depth"
+      },
+      {
+        "name": "The Smile Curve Rule",
+        "body": "The only mark is one SVG path (`M2 3c7 13 21 13 28 0`, 32x16, round caps, 2.4–2.6 stroke) in champagne: beside the wordmark, as the testimonial mark (graphite on gold), and drawn in on form success.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep every surface on white, paper, stone, hero-ground, champagne or graphite.",
+      "Do put graphite text on champagne, and use champagne-ink for gold text on white or paper.",
+      "Do use pills for every button and 14/21px radii for surfaces.",
+      "Do separate lists, prices and FAQ with 1px line hairlines under a 1.5px graphite top rule.",
+      "Do match a hero ground to its photo's backdrop and mask the photo into it.",
+      "Do keep motion to colour, 2px lifts and opacity; honour prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't use uppercase labels, tracked caps or small headings above section titles; the only capitals are the wordmark.",
+      "Don't add a second accent hue or blue clinical tones.",
+      "Don't wrap sections in shadowed card grids; use fields and hairlines.",
+      "Don't set headings heavier than 500 or use weight 700.",
+      "Don't add icons or ornaments beyond the smile curve and the drawn tick."
+    ]
+  }
+}

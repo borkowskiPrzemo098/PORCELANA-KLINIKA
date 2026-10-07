@@ -181,7 +181,7 @@ details p { margin: 0 0 22px; color: var(--ink-2); max-width: 62ch; }
 .card .ticks { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 18px; }
 .hours { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
 .hours li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
-.hours li.is-today { color: var(--gold-ink); font-weight: 600; }
+.hours li.is-today { color: var(--ink); font-weight: 700; }
 
 .form { background: var(--white); border-radius: calc(var(--r) * 1.6); padding: clamp(22px, 3.5vw, 44px); box-shadow: 0 30px 60px -40px rgba(60, 45, 20, .45); border: 1px solid var(--line); min-width: 0; }
 fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
