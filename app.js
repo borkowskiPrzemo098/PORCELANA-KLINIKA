@@ -61,7 +61,7 @@
     { k: 'nakladki', n: 'Ortodoncja nakładkowa', from: 'od 9 800 zł', img: 'photo-1598256989800-fe5f95da9787',
       d: 'Przezroczyste nakładki zamiast aparatu z zamkami. Wymieniasz je co tydzień, a postęp kontrolujemy co 6–8 tygodni. Plan całego leczenia widzisz w animacji 3D przed startem.',
       time: '6–18 miesięcy', visits: 'kontrola co 6–8 tyg.', price: 'od 9 800 zł' },
-    { k: 'bonding', n: 'Bonding', from: 'od 800 zł / ząb', img: 'photo-1629909615184-74f495363b67',
+    { k: 'bonding', n: 'Bonding', from: 'od 800 zł / ząb', img: 'photo-1606811971618-4486d14f3f99',
       d: 'Szybka korekta kształtu i drobnych ubytków materiałem kompozytowym, bez szlifowania zębów. Dobre rozwiązanie na ukruszenia i szpary między zębami.',
       time: '1 dzień', visits: '1 wizyta', price: 'od 800 zł za ząb' },
     { k: 'higienizacja', n: 'Higienizacja', from: '380 zł', img: 'photo-1629909613654-28e377c37b09',
