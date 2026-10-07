@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <!--
@@ -21,7 +21,7 @@ THESIS: Porcelana jako materiał — biel z ciepłym połyskiem, cienka złota k
 OWN-WORLD: ciepła biel #faf8f4, biel #fff, kamień #efe9df, szampańskie złoto #a8864b (pola i linie), grafit #1f1d1a. Albert Sans 400–500, zdania (bez wersalików), duża skala. Znak: złota krzywa uśmiechu. Krawędzie lekko zaokrąglone (porcelana), pełne pola zamiast kart.
 STORY: pacjent widzi efekt (uśmiech), rozumie zabiegi i ceny, ufa lekarzom i procesowi, umawia konsultację.
 FIRST VIEWPORT: portret uśmiechniętej pacjentki po prawej, płynnie przechodzący w biel; po lewej nagłówek, lead, złoty przycisk "Umów konsultację"; pasek adres/status/telefon na dole.
-FORM: przepis AMBRA (zatwierdzony przez użytkownika) w jasnej odmianie; sygnatura: wybór zabiegu z panelem szczegółów i ceną.
+FORM: losowanie kierunku pominięte — użytkownik zatwierdził przepis AMBRA (seed AMBRY 84091624), tu w jasnej odmianie; sygnatura: wybór zabiegu z panelem szczegółów i ceną.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
 -->
 <a class="skip" href="#zabiegi">Przejdź do zabiegów</a>
@@ -49,12 +49,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="hero__bg"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=1600&q=85" alt="Uśmiechnięta pacjentka po zabiegu licówek" fetchpriority="high"></div>
   <div class="wrap hero__in">
     <h1 id="hero-h">Uśmiech, który wygląda naturalnie</h1>
-    <p class="hero__lead">Licówki porcelanowe, wybielanie i implanty projektowane cyfrowo — zanim cokolwiek zrobimy, zobaczysz swój nowy uśmiech na ekranie i&nbsp;w&nbsp;ustach.</p>
+    <p class="hero__lead">Licówki porcelanowe, wybielanie i implanty projektowane cyfrowo.<span class="more"> Zanim cokolwiek zrobimy, zobaczysz swój nowy uśmiech na ekranie i&nbsp;w&nbsp;ustach.</span></p>
     <div class="hero__cta">
       <a class="btn btn--gold btn--lg" href="#wizyta">Umów konsultację</a>
       <a class="btn btn--line btn--lg" href="#cennik">Zobacz cennik</a>
     </div>
-    <p class="hero__note">Konsultacja z&nbsp;projektem uśmiechu 250 zł — w&nbsp;całości odliczana od kosztu leczenia.</p>
+    <p class="hero__note">Konsultacja z&nbsp;projektem uśmiechu <b>250 zł</b> — w&nbsp;całości odliczana od kosztu leczenia.</p>
   </div>
   <div class="hero__bar">
     <div class="wrap hero__bar-in">
@@ -74,7 +74,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="zab">
       <div class="zab__list" role="tablist" aria-label="Zabiegi" id="zabList"></div>
       <article class="zab__panel" id="zabPanel" role="tabpanel" aria-live="polite">
-        <figure class="zab__img"><img id="zabImg" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1000&q=80" alt="" loading="lazy"></figure>
+        <figure class="zab__img"><img id="zabImg" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1000&q=80" alt="" loading="lazy"></figure>
         <div class="zab__body">
           <h3 id="zabTitle">Licówki porcelanowe</h3>
           <p id="zabDesc"></p>
@@ -110,7 +110,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </div>
     <div class="team">
       <figure class="doc">
-        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&q=80" alt="Dr Marta Wiśniewska" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=700&q=80" alt="Dr Marta Wiśniewska" loading="lazy">
         <figcaption><b>Dr Marta Wiśniewska</b><span>stomatologia estetyczna, licówki</span><small>założycielka, 16 lat praktyki</small></figcaption>
       </figure>
       <figure class="doc">
@@ -118,7 +118,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <figcaption><b>Dr Paweł Nowak</b><span>implantologia, chirurgia</span><small>ponad 3000 wszczepionych implantów</small></figcaption>
       </figure>
       <figure class="doc">
-        <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=700&q=80" alt="Lek. dent. Julia Zielińska" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=700&q=80" alt="Lek. dent. Julia Zielińska" loading="lazy">
         <figcaption><b>Lek. dent. Julia Zielińska</b><span>ortodoncja nakładkowa</span><small>certyfikowany lekarz systemu nakładek</small></figcaption>
       </figure>
     </div>
@@ -264,6 +264,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <a class="fab" href="#wizyta" id="fab">Umów konsultację</a>
 
-<script src="app.js?v=1"></script>
+<script src="app.js?v=2"></script>
 </body>
 </html>

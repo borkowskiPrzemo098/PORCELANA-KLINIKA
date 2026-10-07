@@ -49,7 +49,7 @@
   // --- zabiegi
   const U = id => `https://images.unsplash.com/${id}?w=1000&q=80`;
   const ZAB = [
-    { k: 'licowki', n: 'Licówki porcelanowe', from: 'od 2 400 zł / ząb', img: 'photo-1606811971618-4486d14f3f99',
+    { k: 'licowki', n: 'Licówki porcelanowe', from: 'od 2 400 zł / ząb', img: 'photo-1606811841689-23dfddce3e95',
       d: 'Cienkie płatki porcelany przyklejane do przedniej powierzchni zębów. Zmieniają kolor, kształt i długość zębów, a przy tym wyglądają jak naturalne szkliwo — także w świetle dziennym.',
       time: '3–4 tygodnie', visits: '4 wizyty', price: 'od 2 400 zł za ząb' },
     { k: 'wybielanie', n: 'Wybielanie', from: '1 200 zł', img: 'photo-1607613009820-a29f7bb81c04',
@@ -148,7 +148,7 @@
   const fab = $('#fab');
   if ('IntersectionObserver' in window) {
     const seen = { hero: true, form: false };
-    const sync = () => fab.classList.toggle('is-hidden', seen.hero || seen.form);
+    const sync = () => fab.classList.toggle('is-hidden', seen.form || (seen.hero && window.innerWidth > 640));
     new IntersectionObserver(([en]) => { seen.hero = en.isIntersecting; sync(); }, { threshold: 0.2 }).observe($('.hero'));
     new IntersectionObserver(([en]) => { seen.form = en.isIntersecting; sync(); }, { threshold: 0 }).observe($('#wizyta'));
     sync();
